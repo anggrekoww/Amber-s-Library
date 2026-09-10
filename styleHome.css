@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f4f1ea; 
+    color: #333;
+    overflow-x: hidden;
+    font-family: serif;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/boo.jpg') no-repeat center center/cover;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0 30px 0; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ac8e68be;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+img{
+    height: 240px;
+    width: 170px;
+    border-radius: 10px;
+}
+
+i{
+    padding-right: 8px;
+}
+
+.logo {
+    font-size: 28px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.searchbar{
+    background-color: #e0ddd66e;
+    width: 700px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.searchbar:hover{
+    background-color:   #e0ddd69f;
+    cursor: text;
+}
+
+.popupBuka{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.popupNotif{
+    display: none; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popupNotif:target {
+      display: flex;
+}
+
+.popupNotif h2{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.popupBox {
+    background: rgb(233, 229, 223);
+    max-width: 500px; 
+    width: 90%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.close-btn {
+      position: absolute;
+      top: 10px; right: 20px;
+      font-size: 28px;
+      text-decoration: none;
+      color: #333;
+      background-color: #92460c3d;
+      width: 25px;
+      height: 35px;
+      text-align: center;
+      border-radius: 5px;
+}
+
+.close-btn:hover{
+    background-color: #92460c62;
+}
+
+.kotaknotif{
+    border: 2px solid #3d28187c; 
+    border-radius: 5px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.notif{
+    background-color:#3d28182f;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.collection{
+    background-color:#e0ddd66e;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: grab;
+}
+
+.collection a{
+    text-decoration: none;
+    padding-left: 5px;
+    color:#3d2818;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.collection:hover{
+    background-color:   #e0ddd69f;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #9c9478;
+}
+
+.hero {
+    margin-top: auto;
+    margin-bottom: 70px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.book-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 5px solid #a59e87;
+    padding-left: 10px;
+}
+
+.book-scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+.book-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.book-card {
+    flex: 0 0 180px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-info:hover h3{
+    white-space: normal;
+    text-overflow: unset;
+}
+
+.book-img-placeholder {
+    width: 100%;
+    height: 240px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-img-placeholder::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-size: 14px;
+}
+
+.book-info h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 170px;
+}
+
+.book-info p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.book-info button {
+    background-color: #9c74569c;
+    text-decoration: none;
+    color: #3d2818;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.book-info button:hover {
+    background-color: #9C7456;
+}
+
+.category-section {
+    background-color: #E8E4E4;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.section-title-center {
+    text-align: center;
+    font-size: 24px;    
+    color: #333;
+    background-color: #9b673c70;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 380px;
+    margin-right: 380px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.category-btn {
+    background-color: #d9d9d9;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(223, 138, 138, 0.1);
+    transition: 0.3s;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.category-btn:hover {
+    background-color: #b1aa96;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(223, 138, 138, 0.1);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.category-btn i {
+    font-size: 20px;
+    color: #555;
+}
+
+.footer {
+    background-image: url(../img/boo.jpg); 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    font-size: 40px;
+    margin-top: 10px;
+    padding-left: 50px; 
+    padding-right: 100px;
+    width: 650px;
+    opacity: 0.40;         
+}
+
+.line{
+    margin-top: 20px;
+    border-left: 2px solid rgb(252, 247, 247);
+    height: 110px; 
+    display: inline-block;
+}
+
+.footer-mid{
+    margin-top: 8px;
+    font-size: 17px; 
+    width: 380px;
+}
+
+.footer-right{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    gap: .8rem;
+}

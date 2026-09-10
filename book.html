@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Buku</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styleBook.css" />
+    <link rel="icon" href="icon.jpg">
+</head>
+
+<header class="header">
+        <nav class="navbar">
+            <div class="logo">Amber's Library</div>
+            <div class="searchbar"><i class="fas fa-search"></i>Telusuri buku...</div>
+            <div class="collection">
+                <i class="fas fa-book">
+                    <a href="#">Buku anda</a>
+                </i>
+            </div>
+            <div class="nav-links">
+                 <a href="#notif" class="popupBuka"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fa-solid fa-diamond"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+
+        <div class="buku">
+          <img src="hp_chamber.jpg">
+          <div class="tempat">
+            <div class="judulbuku">
+              <h2>Harry Potter: and the Chamber of Secrets</h2>
+              <h6>J.K. Rowling</h6>
+            </div>
+            <div class="deskripsibuku">
+                <p><b>Harry Potter and the Chamber of Secrets </b>mengisahkan tahun kedua Harry di Hogwarts. Ia mendapat peringatan dari peri rumah bernama Dobby agar tidak kembali karena ada bahaya besar. Harry mengabaikannya. Di sekolah, muncul teror misterius berupa tulisan di dinding dan para siswa yang mendadak menjadi batu. Harry bersama Ron dan Hermione harus menyelidiki siapa pewaris Slytherin yang membuka kembali Kamar Rahasia tersebut.</p>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-bookmark" id="icon"></i>
+                <i class="fa-solid fa-comment"></i>
+                <i class="fa-solid fa-book-open" id="baca"><span>Baca Sekarang</span></i>
+                <i class="fa-solid fa-download" id="unduh"><span>Unduh</span></i>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div id="notif" class="popupNotif">
+            <div class="popupBox">
+                <a href="#" class="close-btn">x</a>
+                <h2>Notifikasi Anda</h2>
+                <div class="kotaknotif">
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">hi</p>
+                    <p class="notif">Halo (Pengguna), akun anda telah terdaftar! Selamat membaca!</p>
+                    <p class="notif" style="margin-bottom: 0">Selamat datang di Amber's Library. Telusuri dan baca buku sesuka anda</p>
+                </div>    
+            </div>
+        </div>
+
+    <section class="book-section">
+            <h2 class="section-title" style="margin-top: 60px">Buku terkait</h2>
+            <div class="book-scroll-container">
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_stone.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Philosopher's Stone</h3>
+                        <p>J.K. Rowling</p>
+                        <button ><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_prisoner.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Prisoner of Azkaban</h3>
+                        <p>J.K. Rowling</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_goblet.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Goblet of Fire</h3>
+                        <p>J.K. Rowling</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_pheonix.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Order of the Pheonix</h3>
+                        <p>J.K. Rowling</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_halfblood.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Half-Blood Prince</h3>
+                        <p>J.K. Rowling</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hp_deathly.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Harry Potter: and the Deathly Hallows</h3>
+                        <p>J.K. Rowling</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-section">
+            <h2 class="section-title">Novel fantasi lainnya</h2>
+            <div class="book-scroll-container">
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_dawntreader.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: The Voyage of the Dawn Treader</h3>
+                        <p>C.S. Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_princecaspian.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: Prince Caspian</h3>
+                        <p>C.S Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_lion.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: The Lion and The boy</h3>
+                        <p>C.S. Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_silverchair.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: The Silver Chair</h3>
+                        <p>C.S. Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="bumi.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Bumi</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                  <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="bulan.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Bulan</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="komet.jpg">
+                    </div>
+                 <div class="book-info">
+                        <h3>Komet</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="matahari.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Matahari</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="nebula.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Nebula</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+
+        <section class="book-section">
+            <h2 class="section-title">Rekomendasi untuk anda</h2>
+            <div class="book-scroll-container">
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="sherlockholmes.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Adventures of Sherlock Holmes</h3>
+                        <p>Arthur Conan Doyle</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="dilan.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Dilan 1990</h3>
+                        <p>Pidi Baiq</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_dawntreader.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: The Voyage of the Dawn Treader</h3>
+                        <p>C.S. Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="narnia_lion.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Narnia: The Lion and The boy</h3>
+                        <p>C.S. Lewis</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="hiddenlove.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Secretly, Secretly, but Unable to Hide It</h3>
+                        <p>Zhu Yi</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="bumi.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Bumi</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                  <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="bulan.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Bulan</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="komet.jpg">
+                    </div>
+                 <div class="book-info">
+                        <h3>Komet</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="matahari.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Matahari</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+                 <div class="book-card">
+                    <div class="book-img-placeholder">
+                        <img src="nebula.jpg">
+                    </div>
+                    <div class="book-info">
+                        <h3>Nebula</h3>
+                        <p>Tere Liye</p>
+                        <button><i class="fas fa-eye"></i> Lihat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Amber's Library</h3>
+        </div>
+        <div class="footer-right">
+            <div class="footer-mid">
+            <p><i class="fa-brands fa-instagram"></i>amberslibrary_official</p>
+            <p><i class="fas fa-envelope"></i>amberslibrary@gmail.com</p> 
+            <p><i class="fa-solid fa-phone"></i>+62 123 4567 890</p>
+            </div>
+            <div class="line"></div>
+            <div class="katakata">
+                <p style="font-size: 20px; font-weight: bold">About Us</p>    
+                <p>Perpustakaan online yang memudahkan pengguna dalam membaca buku dimana pun dan kapan pun. Isi pikiranmu dan buka perspekstif baru dengan kami</p>
+                <p><b>Amber's Library™</b></p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

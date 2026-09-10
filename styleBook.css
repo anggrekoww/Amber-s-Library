@@ -350,7 +350,7 @@ section{
 }
 
 .footer {
-    background-image: url(../img/boo.jpg); 
+    background-image: url(boo.jpg); 
     color: white;
     display: flex;
     justify-content: space-between;

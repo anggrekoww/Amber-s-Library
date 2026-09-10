@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  background: url(../img/boo.jpg);
+  background: url(boo.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

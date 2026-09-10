@@ -205,10 +205,6 @@ i{
     scroll-behavior: smooth;
 }
 
-.book-scroll-container::-webkit-scrollbar {
-    display: none;
-}
-
 .book-card {
     flex: 0 0 180px;
     background: white;
